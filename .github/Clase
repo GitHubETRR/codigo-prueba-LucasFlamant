@@ -1,0 +1,23 @@
+#include <stdio>
+#define MAX_CHAR 50
+
+struct punto
+{
+	char Nombre [MAX_CHAR];
+	int CoorX;
+	int CoorY;
+} punto1,punto2;
+
+int main(void)
+{
+	punto1.CoorX=3;
+	punto1.CoorY=4;
+	punto2.CoorX=6;
+	punto2.CoorY=7;
+
+	printf("%d\n",punto1,CoorX);
+    printf("%d\n",punto1,CoorY);
+    printf("%d\n",punto2,CoorX);
+    printf("%d\n",punto2,CoorY);
+	return 0;
+}
