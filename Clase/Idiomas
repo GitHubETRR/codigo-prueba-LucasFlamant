@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+    #define ESP 0
+    #define ENG 1
+int main(void)
+{
+    int idioma=ENG;
+    char txt1[2][6]={"Hola","Hello"};
+    char txt2[2][5]={"Chau","Bye"};
+    printf("Ingrese 1 para ingles, 0 para español\n");
+    scanf("%d",&idioma);
+    printf("%s\n",txt1[idioma]);
+    printf("%s\n",txt2[idioma]);
+    
+
+    return 0;
+}
