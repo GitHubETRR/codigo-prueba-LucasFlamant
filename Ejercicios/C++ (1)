@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Jugador 
+{
+private:
+    string nombre;
+    int anio;
+public:
+    Jugador(const string& n, int a) 
+    {
+        nombre = n;
+        anio = a;
+    }
+    void mostrarInfo() const 
+    {
+        cout << "Nombre: " << nombre << endl;
+        cout << "Año: " << anio << endl;
+    }
+};
+int main() 
+{
+    Jugador* pJugador = new Jugador("Diego", 1986);
+    pJugador->mostrarInfo();
+    delete pJugador;
+    return 0;
+}
